@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name GuzTech)(type Legacy)(uri ${KIPRJMOD}/GuzTech.lib)(options "")(descr ""))
+)
