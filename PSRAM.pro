@@ -1,4 +1,4 @@
-update=Fri 28 Aug 2020 03:43:53 PM CEST
+update=Tue 15 Sep 2020 03:16:07 PM CEST
 version=1
 last_client=kicad
 [general]
@@ -26,7 +26,7 @@ ERC_TestSimilarLabels=1
 version=1
 PageLayoutDescrFile=
 LastNetListRead=PSRAM.net
-CopperLayerCount=2
+CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
 AllowBlindVias=0
@@ -38,7 +38,7 @@ MinViaDrill=0.2032
 MinMicroViaDiameter=0.4572
 MinMicroViaDrill=0.2032
 MinHoleToHole=0.5588
-TrackWidth1=0.381
+TrackWidth1=0.3048
 ViaDiameter1=0.4572
 ViaDrill1=0.2032
 dPairWidth1=0.127
@@ -75,11 +75,11 @@ Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
 Type=0
-Enabled=0
+Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
 Type=0
@@ -197,11 +197,11 @@ Name=B.Cu
 Type=0
 Enabled=1
 [pcbnew/Layer.B.Adhes]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.F.Adhes]
 Enabled=1
 [pcbnew/Layer.B.Paste]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.F.Paste]
 Enabled=1
 [pcbnew/Layer.B.SilkS]
@@ -229,7 +229,7 @@ Enabled=1
 [pcbnew/Layer.F.CrtYd]
 Enabled=1
 [pcbnew/Layer.B.Fab]
-Enabled=1
+Enabled=0
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
@@ -237,8 +237,8 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.254
-TrackWidth=0.381
+Clearance=0.2032
+TrackWidth=0.3048
 ViaDiameter=0.4572
 ViaDrill=0.2032
 uViaDiameter=0.4572
@@ -247,11 +247,33 @@ dPairWidth=0.127
 dPairGap=0.127
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
-Name=data
+Name=5mil
 Clearance=0.127
 TrackWidth=0.127
 ViaDiameter=0.4572
 ViaDrill=0.2032
+uViaDiameter=0.4572
+uViaDrill=0.2032
+dPairWidth=0.127
+dPairGap=0.127
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=power
+Clearance=0.254
+TrackWidth=0.889
+ViaDiameter=0.762
+ViaDrill=0.508
+uViaDiameter=0.4572
+uViaDrill=0.2032
+dPairWidth=0.127
+dPairGap=0.127
+dPairViaGap=0.25
+[pcbnew/Netclasses/3]
+Name=signals
+Clearance=0.254
+TrackWidth=0.508
+ViaDiameter=0.5588
+ViaDrill=0.381
 uViaDiameter=0.4572
 uViaDrill=0.2032
 dPairWidth=0.127
